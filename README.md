@@ -1,5 +1,8 @@
 # Leonida 55 — GTA VI Trophy Guide & Tracker
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![make.fun](https://img.shields.io/badge/make.fun-gta6--trophy--guide--01-orange.svg)](https://make.fun/bounty/gta6-trophy-guide-01)
+
 An offline web app that guides and tracks all 55 PlayStation 5 trophies of Grand Theft Auto VI. Open `app/index.html` in a desktop browser with the network off and it works: checklist, guides, roadmap, missable watch, save and export.
 
 ## What it does
