@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Leonida 55 — GTA VI Trophy Guide &amp; Tracker</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="masthead">
+  <div class="brand">
+    <div class="mark" aria-hidden="true">55</div>
+    <div>
+      <h1>Leonida 55</h1>
+      <p class="tagline">GTA VI trophy guide &amp; tracker — every trophy, cited, checked off as you earn it.</p>
+      <p class="official">Official PS5 list: 55 trophies — 1 Platinum, 2 Gold, 6 Silver, 46 Bronze. Published on PlayStation Network 18 Nov 2026. 28 hidden until earned. No online trophies. About 200 hours to platinum.</p>
+    </div>
+  </div>
+  <div class="progress" id="progressBox">
+    <div class="bigcount"><span id="earnedCount">0</span><span class="of">/ 55 earned</span></div>
+    <div class="bar" role="progressbar" aria-label="Trophies earned"><div class="fill" id="progressFill"></div></div>
+    <div class="gradechips" id="gradeChips"></div>
+    <p class="platinumline" id="platinumLine">54 trophies to go until the platinum.</p>
+  </div>
+</header>
+<nav class="tabs" id="tabs" aria-label="Guide sections">
+  <button type="button" data-view="checklist" class="active">Checklist</button>
+  <button type="button" data-view="roadmap">Platinum roadmap</button>
+  <button type="button" data-view="missables">Missable watch</button>
+  <button type="button" data-view="save">Save &amp; counters</button>
+  <button type="button" data-view="about">About &amp; sources</button>
+</nav>
+<div class="toolbar" id="toolbar">
+  <input id="search" type="search" placeholder="Search trophies by name or description…" aria-label="Search trophies">
+  <div class="kinds" id="kindChips" role="group" aria-label="Filter by kind"></div>
+  <label class="field">Grade
+    <select id="gradeFilter">
+      <option value="all">All grades</option>
+      <option value="platinum">Platinum</option>
+      <option value="gold">Gold</option>
+      <option value="silver">Silver</option>
+      <option value="bronze">Bronze</option>
+    </select>
+  </label>
+  <label class="check"><input type="checkbox" id="missableOnly"> Missable only</label>
+  <label class="check spoiler"><input type="checkbox" id="spoilerToggle" checked> Spoiler-safe: hide hidden trophies</label>
+  <button type="button" id="exportBtn">Export progress</button>
+  <label class="importbtn">Import progress <input id="importFile" type="file" accept="application/json,.json"></label>
+</div>
+<main>
+  <section id="view-checklist" class="view">
+    <div class="nextup" id="nextUp"></div>
+    <div class="split">
+      <div class="listcol">
+        <p class="listmeta" id="listMeta"></p>
+        <ul class="trophylist" id="trophyList"></ul>
+        <p class="empty" id="emptyNote" hidden>No trophies match these filters. Try clearing the search or a filter.</p>
+      </div>
+      <aside class="guidepane" id="guidePane" aria-label="Trophy guide"></aside>
+    </div>
+  </section>
+  <section id="view-page" class="view" hidden>
+    <div id="pageBody"></div>
+  </section>
+</main>
+<footer>
+  <p>Leonida 55 is an independent, unofficial guide. Not affiliated with Rockstar Games or PlayStation. Trophy names and descriptions are shown as PlayStation publishes them; every guide is written in our own words and cites its sources. Works fully offline — this page fetches nothing from the network.</p>
+</footer>
+<script type="module" src="app.js"></script>
+</body>
+</html>
